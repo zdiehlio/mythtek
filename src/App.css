@@ -1,32 +1,51 @@
+/* body, html {
+  height: 100vh;
+} */
 .App {
+  perspective: 20px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: antiquewhite;
+}
+
+/* .parallax-container {
+  height: 300px;
+  background-color: white;
+} */
+.parallax {
+  transform-style: preserve-3d;
+  position: relative;
+  z-index: -1;
+  height: 20vh;
+  /* justify-content: center; */
+  transform: translateZ(-8px) scale(2);
+  background: url('./assets/other_logo.png');
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position: center top;
+  margin-bottom:8em;
+  /* background-attachment: fixed; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-container {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 90%;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  width: 100%;
+  height: 200px;
+  /* padding: 75px  */
 }
