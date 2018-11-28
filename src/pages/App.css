@@ -7,7 +7,7 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: antiquewhite;
+  background-image: linear-gradient(to bottom right, darkblue, black);
 }
 
 /* .parallax-container {
@@ -36,11 +36,20 @@ a {
   color: black;
 }
 
+#header-slogan {
+  color: white;
+  margin: 0px;
+  position: absolute;
+  margin-top: 8em;
+  right: 5em;
+  /* position: relative; */
+}
+
 .main-container {
   background-color: white;
   position: relative;
   z-index: 1;
-  top: -400px;
+  top: -300px;
   margin: auto;
   display: block;
   width: 95%;
@@ -67,8 +76,20 @@ header {
 
 h2 {
   margin-bottom: 3em;
+  font-family: "Roboto-Slab"
 }
 
 form {
   padding: 5em;
+}
+
+footer {
+  margin-top: -100px;
+  padding-bottom: 4em;
+  text-align: center;
+  color: white;
+}
+
+footer > span {
+  top: 0;
 }
