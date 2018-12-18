@@ -88,7 +88,7 @@ class Home extends Component {
 					<Profile 
 						source={Brittany} 
 						altText={'Picture of Project Manager'} 
-						teamMember={'Brittany Stubs'} 
+						teamMember={'Brittany Stubbs'} 
 						title={'The reason !%$# get\'s done around here'} 
 						role={'Product Management Team'}
 						quote={'"we all move forward when we recognize how striking and resilient the women around us are" -rupi kaur'} 

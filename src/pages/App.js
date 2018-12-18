@@ -39,7 +39,7 @@ class App extends Component {
           <div className="parallax">
           </div>
           <div className="main-container">
-            <Link to='/'><Tab label="Home"/></Link>
+            {/* <Link to='/'><Tab label="Home"/></Link> */}
             {/* <Link to='/about'><Tab label="About"/></Link> */}
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
