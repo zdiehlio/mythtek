@@ -27,12 +27,12 @@ const StyledPaper = withStyles({
 
 const StyledCard = withStyles({
 	root: {
-		width: '30%',
+		width: '20%',
 		margin: 'auto',
 		marginRight: '2em',
 		display: 'inline-block',
 		height: '15em',
-		paddingTop: '2em'
+		padding: '2em'
 	}
 })(Card)
 
@@ -55,7 +55,7 @@ class Home extends Component {
 			<main>
 				<StyledPaper>
 					<h2>Who We Are</h2>
-						<p>A team of designers, developers and digital marketers dedicated to creating phenomonal products for our clients and users.  We don't stop at red, we keep turning right until we find a green.</p>
+						<p id='intro'>A creative team of designers, developers and digital marketers dedicated to creating products with a purpose that will improve the experience of being human.  We believe in technology that creates as much value for the user as it does for the company.  Our team members are dedicated to creating solutions that will make an impact on individuals, communities, and organizations around the world.</p>
 				</StyledPaper>
 				<StyledPaper>
 					<h2>What We Do</h2>
@@ -82,6 +82,7 @@ class Home extends Component {
 						altText={'Picture of Developer'} 
 						teamMember={'Zachary Diehl'} 
 						title={'Slayer of Code'} 
+						role={'Development Team'}
 						quote={'"it\'s a miracle our curiosity survives formal education" - Albert Einstein'} 
 					/>
 					<Profile 
@@ -89,6 +90,7 @@ class Home extends Component {
 						altText={'Picture of Project Manager'} 
 						teamMember={'Brittany Stubs'} 
 						title={'The reason !%$# get\'s done around here'} 
+						role={'Product Management Team'}
 						quote={'"we all move forward when we recognize how striking and resilient the women around us are" -rupi kaur'} 
 					/>
 					<Profile 
@@ -96,6 +98,7 @@ class Home extends Component {
 						altText={'Picture of Marketer'} 
 						teamMember={'Mei Miles'} 
 						title={'Adventure Liaison'} 
+						role={'Marketing Team'}
 						quote={'“If you want to understand the entrepreneur, study the juvenile delinquent. The delinquent is saying with his actions, ‘This sucks. I’m going to do my own thing.” -yvon chouinard'} 
 					/>
 					<Profile 
@@ -103,6 +106,7 @@ class Home extends Component {
 						altText={'Picture of Designer'} 
 						teamMember={'Caleb Pase'} 
 						title={'Hybrid Designer/Unicorn in Training'} 
+						role={'Design Team'}
 						quote={'"What got us here today, won\'t get us there tomorrow" -Marshall Goldsmith'} 
 					/>
 				</StyledPaper>
@@ -145,6 +149,7 @@ class Home extends Component {
 							<MenuItem value='web_app'>Web App</MenuItem>
 							<MenuItem value='other'>Other</MenuItem>
 						</StyledInput>*/}
+						<input type="hidden" name="_next" value="./"/>
 					<Button type='submit'>Send</Button> 
 					{/* </FormControl> */}
 				</form>
