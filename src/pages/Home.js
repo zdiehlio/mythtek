@@ -8,10 +8,15 @@ import CardGiftcard from '@material-ui/icons/CardGiftcard'
 import { withStyles } from '@material-ui/core/styles'
 import Woman from '../assets/woman.png'
 import Man from '../assets/man.png'
+import Zach from '../assets/zach.jpg'
+import Brittany from '../assets/brittany.jpg'
+import Caleb from '../assets/caleb.jpg'
+import Mei from '../assets/mei.JPG'
 import TextField from '@material-ui/core/TextField'
 import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
-import { FormControl, InputLabel } from '@material-ui/core';
+import { FormControl, InputLabel, Button } from '@material-ui/core';
+import Profile from '../components/Profile';
 
 
 const StyledPaper = withStyles({
@@ -28,16 +33,6 @@ const StyledCard = withStyles({
 		display: 'inline-block',
 		height: '15em',
 		paddingTop: '2em'
-	}
-})(Card)
-
-const ProfileCard = withStyles({
-	root: {
-		width: '40%',
-		margin: 'auto',
-		marginRight: '2em',
-		marginTop: '2em',
-		display: 'inline-block',
 	}
 })(Card)
 
@@ -82,50 +77,64 @@ class Home extends Component {
 				</StyledPaper>
 				<StyledPaper>
 					<h2>Meet the Team</h2>
-					<ProfileCard>
-						<img src={Man} alt='silouhette of man'/>
-						<h4>Zachary Diehl</h4>
-						<p>Founder</p>
-						<p>Full Stack Developer and Technical Director</p>
-					</ProfileCard>
-					<ProfileCard>
-						<img src={Woman} alt='silouhette of Woman'/>
-						<h4>Some Girl</h4>
-						<p>Marketing Director</p>
-						<p>Marketing Ninja</p>
-					</ProfileCard>
-					<ProfileCard>
-						<img src={Woman} alt='silouhette of Woman'/>
-						<h4>Some Girl</h4>
-						<p>Web Designer</p>
-						<p>Visual Wizard</p>
-					</ProfileCard>
-					<ProfileCard>
-						<img src={Man} alt='silouhette of Man'/>
-						<h4>Some Guy</h4>
-						<p>BE Developer</p>
-						<p>BE magician</p>
-					</ProfileCard>
+					<Profile 
+						source={Zach} 
+						altText={'Picture of Developer'} 
+						teamMember={'Zachary Diehl'} 
+						title={'Slayer of Code'} 
+						quote={'"it\'s a miracle our curiosity survives formal education" - Albert Einstein'} 
+					/>
+					<Profile 
+						source={Brittany} 
+						altText={'Picture of Project Manager'} 
+						teamMember={'Brittany Stubs'} 
+						title={'The reason !%$# get\'s done around here'} 
+						quote={'"we all move forward when we recognize how striking and resilient the women around us are" -rupi kaur'} 
+					/>
+					<Profile 
+						source={Mei} 
+						altText={'Picture of Marketer'} 
+						teamMember={'Mei Miles'} 
+						title={'Adventure Liaison'} 
+						quote={'“If you want to understand the entrepreneur, study the juvenile delinquent. The delinquent is saying with his actions, ‘This sucks. I’m going to do my own thing.” -yvon chouinard'} 
+					/>
+					<Profile 
+						source={Caleb} 
+						altText={'Picture of Designer'} 
+						teamMember={'Caleb Pase'} 
+						title={'Hybrid Designer/Unicorn in Training'} 
+						quote={'"What got us here today, won\'t get us there tomorrow" -Marshall Goldsmith'} 
+					/>
 				</StyledPaper>
-				<form>
+				<form action= "https://formspree.io/zachary.diehl@gmail.com" method="POST">
 					<h2>Work with us</h2>
 					<StyledInput 
 						label='Name'
 						margin='normal'
+						name='message'
 					/>
 					<StyledInput 
 						label='Email'
 						margin='normal'
+						name='email'
 					/>
 					<StyledInput 
 						label='Company'
 						margin='normal'
+						name='message'
+					/>
+					<TextField
+						label='Message'
+						margin='normal'
+						name='message'
+						multiline
+						fullWidth
 					/>
 					{/* <FormControl> */}
-						<StyledInput 
+						{/* <StyledInput 
 							select
 							label='product'
-							name='product' 
+							name='message' 
 							style={{width:'200px'}}
 							value={this.state.product}
 							margin='normal'
@@ -135,7 +144,8 @@ class Home extends Component {
 							<MenuItem value='mobile_app'>Mobile App</MenuItem>
 							<MenuItem value='web_app'>Web App</MenuItem>
 							<MenuItem value='other'>Other</MenuItem>
-						</StyledInput>
+						</StyledInput>*/}
+					<Button type='submit'>Send</Button> 
 					{/* </FormControl> */}
 				</form>
 			</main>

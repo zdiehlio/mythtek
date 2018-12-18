@@ -81,6 +81,8 @@ h2 {
 
 form {
   padding: 5em;
+  width: 60%;
+  margin: auto;
 }
 
 footer {
