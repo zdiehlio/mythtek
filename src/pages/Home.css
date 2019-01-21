@@ -1,0 +1,60 @@
+main {
+    width: 80%;
+    margin: auto;
+    margin-top: 10em;
+    text-align: center;
+}
+span.special {
+    font-family: 'Montserrat', sans-serif;
+    color: #F91F60;
+  }
+
+.circle1 {
+    border: solid #F91F60 1px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -50px;
+}
+
+.circle2 {
+    border: solid #F91F60 1px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -55px;
+}
+
+.circle3 {
+    border: solid #F91F60 1px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -80px;
+}
+
+.cards {
+    width: 33%;
+    display: inline-block;
+}
+
+@media only screen and (max-width:600px) {
+    .cards {
+        width: 100%;
+    }
+}
+
+.cards>p {
+    box-sizing: content-box;
+    padding: 0 2%;
+}
+
