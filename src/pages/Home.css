@@ -1,8 +1,9 @@
 main {
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-top: 10em;
     text-align: center;
+    padding-bottom: 5em;
 }
 span.special {
     font-family: 'Montserrat', sans-serif;
@@ -57,4 +58,52 @@ span.special {
     box-sizing: content-box;
     padding: 0 2%;
 }
+
+.flourish-right1 {
+    position: absolute;
+    right: 0;
+    margin-top: -450px;
+    z-index: 1;
+}
+
+.flourish-right2 {
+    position: absolute;
+    right: 0;
+    margin-top: -1000px;
+    z-index: 1;
+}
+
+.flourish-left {
+    position: absolute;
+    left: 0;
+    margin-top: -400px;
+}
+
+.profiles {
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+.profile-body {
+    display: inline-block;
+    top: 0;
+    width: 80%;
+}
+
+div.tag {
+    width: fit-content;
+    text-transform: uppercase;
+    /* height: 43px;
+    padding: 5px 15px;
+    border-radius: 50%;
+    border: 1px solid #F91D61; */
+}
+
+.tag>p {
+    color: #F91D61;
+}
+
+
+
+
 

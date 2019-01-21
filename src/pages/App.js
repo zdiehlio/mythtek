@@ -36,10 +36,6 @@ class App extends Component {
             {/* <Link to='/'><Tab label="Home"/></Link> */}
             <Route exact path="/" component={Home} />
           </div>
-          <footer>
-            <StyledCopyright color="secondary" />
-            <span>2018 Powered by MythTek</span>
-          </footer>
         </div>
       </Router>
     );
