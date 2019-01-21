@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
-import Zach from '../assets/zach.jpg'
-import Brittany from '../assets/brittany.jpg'
-import Caleb from '../assets/caleb.jpg'
-import Mei from '../assets/mei.JPG'
+import Zach from '../assets/profile-zach.png'
+import Brittany from '../assets/profile-brittany.png'
+import Caleb from '../assets/profile-caleb.png'
+import Mei from '../assets/profile-mei.png'
 import Profile from '../components/Profile';
 import Card from '../components/Card'
 import Develop from '../assets/icon-develop.svg'
 import Design from '../assets/icon-design.svg'
 import Market from '../assets/icon-market.svg'
+import FRightOne from '../assets/flourish-right-1.png'
+import FRightTwo from '../assets/flourish-right-2.png'
+import FLeftOne from '../assets/flourish-left-1.png'
+import FlourishBot from '../assets/flourish-bottom-1.svg'
+
 import './Home.css'
 
 class Home extends Component {
@@ -28,6 +33,7 @@ class Home extends Component {
 					<span className='circle1' />
 					<p>A creative team of designers, developers, and digital marketers dedicated to creating <span className='special'>products with a purpose</span> that will improve the experience of being human.  We believe in technology that creates as much value for the user as it does for the company.  Our team members are dedicated to creating solutions that will make an impact on individuals, communities, and organizations around the world.</p>
 				</section>
+				<img className='flourish-right1' src={FRightOne} />
 				<section>
 					<Card 
 						alt='design icon'
@@ -48,14 +54,14 @@ class Home extends Component {
 						description='Our marketers will tell the final story of your product to reach those it will serve best.'
 					/>
 				</section>
+				<img className='flourish-left' src={FLeftOne} />
 				<section>
-					<h1>Meet the Team</h1>
 					<Profile 
 						source={Zach} 
 						altText={'Picture of Developer'} 
 						teamMember={'Zachary Diehl'} 
 						title={'Slayer of Code'} 
-						role={'Development Team'}
+						role={'Development'}
 						quote={'"it\'s a miracle our curiosity survives formal education" - Albert Einstein'} 
 					/>
 					<Profile 
@@ -63,7 +69,7 @@ class Home extends Component {
 						altText={'Picture of Project Manager'} 
 						teamMember={'Brittany Stubbs'} 
 						title={'The reason !%$# get\'s done around here'} 
-						role={'Product Management Team'}
+						role={'Product Owner'}
 						quote={'"we all move forward when we recognize how striking and resilient the women around us are" -rupi kaur'} 
 					/>
 					<Profile 
@@ -71,7 +77,7 @@ class Home extends Component {
 						altText={'Picture of Marketer'} 
 						teamMember={'Mei Miles'} 
 						title={'Adventure Liaison'} 
-						role={'Marketing Team'}
+						role={'Marketing'}
 						quote={'“If you want to understand the entrepreneur, study the juvenile delinquent. The delinquent is saying with his actions, ‘This sucks. I’m going to do my own thing.” -yvon chouinard'} 
 					/>
 					<Profile 
@@ -79,10 +85,12 @@ class Home extends Component {
 						altText={'Picture of Designer'} 
 						teamMember={'Caleb Pase'} 
 						title={'Hybrid Designer/Unicorn in Training'} 
-						role={'Design Team'}
+						role={'Design'}
 						quote={'"What got us here today, won\'t get us there tomorrow" -Marshall Goldsmith'} 
 					/>
 				</section>
+				<img className='flourish-right2' src={FRightTwo} />
+				<img src={FlourishBot} />
 					{/* <form action= "https://formspree.io/zachary.diehl@gmail.com" method="POST">
 						<h2>Work with us</h2>
 						<StyledInput 
