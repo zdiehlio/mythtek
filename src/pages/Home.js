@@ -26,84 +26,84 @@ class Home extends Component {
 	render() {
 		return(
 			<main>
-				<section>
-					<span className='circle2' />
-					<span className='circle3' />	
+				<section className='section_about'>
+					<span className='circle circle__2' />
+					<span className='circle circle__3' />
 					<h1>Who We Are</h1>
-					<span className='circle1' />
+					<span className='circle circle__1' />
 					<p>A creative team of designers, developers, and digital marketers dedicated to creating <span className='special'>products with a purpose</span> that will improve the experience of being human.  We believe in technology that creates as much value for the user as it does for the company.  Our team members are dedicated to creating solutions that will make an impact on individuals, communities, and organizations around the world.</p>
 				</section>
 				<img className='flourish-right1' src={FRightOne} />
 				<section>
-					<Card 
+					<Card
 						alt='design icon'
 						image={Design}
 						title='design'
-						description='Begin from Scratch and allow our expert designers to take your product from idea to visual gold'
+						description='Our designers are given the freedom to build rich experiences that people abroad will love.'
 					/>
 					<Card
 						alt='develop icon'
 						image={Develop}
 						title='develop'
-						description='Once the design is perfect, we give it some teeth so it will perform to your expectations'
+						description='Once the design is pixel-perfect, we breath life into the product to make it function.'
 					/>
-					<Card 
+					<Card
 						alt='market icon'
 						image={Market}
 						title='market'
-						description='Our marketers will tell the final story of your product to reach those it will serve best.'
+						description='We then cultivate a rich story for your product to reach those it will serve best.'
 					/>
 				</section>
 				<img className='flourish-left' src={FLeftOne} />
 				<section>
-					<Profile 
-						source={Zach} 
-						altText={'Picture of Developer'} 
-						teamMember={'Zachary Diehl'} 
-						title={'Slayer of Code'} 
+					<Profile
+						source={Zach}
+						altText={'Picture of Developer'}
+						teamMember={'Zachary Diehl'}
+						title={'Slayer of Code'}
 						role={'Development'}
-						quote={'"it\'s a miracle our curiosity survives formal education" - Albert Einstein'} 
+						quote={'"It\'s a miracle our curiosity survives formal education." - Albert Einstein'}
 					/>
-					<Profile 
-						source={Brittany} 
-						altText={'Picture of Project Manager'} 
-						teamMember={'Brittany Stubbs'} 
-						title={'The reason !%$# get\'s done around here'} 
+					<Profile
+						source={Brittany}
+						altText={'Picture of Project Manager'}
+						teamMember={'Brittany Stubbs'}
+						title={'The reason !%$# get\'s done around here'}
 						role={'Product Owner'}
-						quote={'"we all move forward when we recognize how striking and resilient the women around us are" -rupi kaur'} 
+						quote={'"We all move forward when we recognize how striking and resilient the women around us are." -Rupi Kaur'}
 					/>
-					<Profile 
-						source={Mei} 
-						altText={'Picture of Marketer'} 
-						teamMember={'Mei Miles'} 
-						title={'Adventure Liaison'} 
+					<Profile
+						source={Mei}
+						altText={'Picture of Marketer'}
+						teamMember={'Mei Miles'}
+						title={'Adventure Liaison'}
 						role={'Marketing'}
-						quote={'“If you want to understand the entrepreneur, study the juvenile delinquent. The delinquent is saying with his actions, ‘This sucks. I’m going to do my own thing.” -yvon chouinard'} 
+						quote={'“If you want to understand the entrepreneur, study the juvenile delinquent. The delinquent is saying with his actions, ‘This sucks. I’m going to do my own thing.” -Yvon Chouinard'}
 					/>
-					<Profile 
-						source={Caleb} 
-						altText={'Picture of Designer'} 
-						teamMember={'Caleb Pase'} 
-						title={'Hybrid Designer/Unicorn in Training'} 
+					<Profile
+						source={Caleb}
+						altText={'Picture of Designer'}
+						teamMember={'Caleb Pase'}
+						title={'Hybrid Designer/Unicorn in Training'}
 						role={'Design'}
-						quote={'"What got us here today, won\'t get us there tomorrow" -Marshall Goldsmith'} 
+						quote={'"What got us here today, won\'t get us there tomorrow." -Marshall Goldsmith'}
 					/>
 				</section>
 				<img className='flourish-right2' src={FRightTwo} />
-				<img src={FlourishBot} />
+				<img className='flourish-bot' src={FlourishBot} />
 					{/* <form action= "https://formspree.io/zachary.diehl@gmail.com" method="POST">
 						<h2>Work with us</h2>
-						<StyledInput 
+						<StyledInput
 							label='Name'
 							margin='normal'
 							name='message'
 						/>
-						<StyledInput 
+						<StyledInput
 							label='Email'
 							margin='normal'
 							name='email'
 						/>
-						<StyledInput 
+						<StyledInput
 							label='Company'
 							margin='normal'
 							name='message'
@@ -116,10 +116,10 @@ class Home extends Component {
 							fullWidth
 						/>
 						{/* <FormControl> */}
-							{/* <StyledInput 
+							{/* <StyledInput
 								select
 								label='product'
-								name='message' 
+								name='message'
 								style={{width:'200px'}}
 								value={this.state.product}
 								margin='normal'

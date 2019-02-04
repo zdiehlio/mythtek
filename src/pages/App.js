@@ -28,10 +28,6 @@ class App extends Component {
         <div className="App">
           {/* <StyledAppBar position='fixed'> */}
           {/* </StyledAppBar> */}
-          <div id="header-slogan">
-            <h1>Every Product Needs a Story</h1>
-            <h3>Yours Begins here</h3>
-          </div>
           <div className="main-container">
             {/* <Link to='/'><Tab label="Home"/></Link> */}
             <Route exact path="/" component={Home} />
