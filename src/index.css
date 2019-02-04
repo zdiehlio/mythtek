@@ -5,6 +5,7 @@ body {
   background: #191919;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
 }
 
 p {
@@ -12,9 +13,16 @@ p {
   font-weight: 300;
   color: #6F6D78;
   letter-spacing: 1px;
-  margin: 0 auto;
-  line-height: 36px;
+  line-height: 30px;
   margin-top: 1em;
+  z-index: 999;
+  position: relative;
+  font-size: .9rem;
+}
+@media only screen and (max-width:600px) {
+    p {
+        margin-top: 0.5em;
+    }
 }
 
 
@@ -23,8 +31,26 @@ h1 {
   letter-spacing: 4px;
   text-transform: uppercase;
   margin: 0 auto;
+  font-size: 1rem;
+  z-index: 999;
+  position: relative;
 }
 
  section {
-   padding-bottom: 100px;
+   overflow: auto;
+   padding-bottom: 20vh;
+ }
+
+ img {
+   width: 100%;
+   height: auto;
+ }
+
+ main {
+     width: 85%;
+     max-width: 1250px;
+     margin: auto;
+     margin-top: 10em;
+     text-align: center;
+     padding-bottom: 5em;
  }
