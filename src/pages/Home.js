@@ -133,7 +133,7 @@ class Home extends Component {
 							{/* <input type="hidden" name="_next" value="./"/> */}
 						{/* <Button type='submit'>Send</Button>  */}
 						{/* </FormControl> */}
-					{/* </form> */} */}
+					{/* </form> */} 
 			</main>
 		)
 	}
