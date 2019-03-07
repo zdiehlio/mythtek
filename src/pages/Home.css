@@ -1,15 +1,19 @@
+.main-container:first-child {
+    padding-top: 80px;
+}
+
 .special {
     color: #F91F60;
     font-weight: bold;
 }
 
-.section_about p {
+.section_center p {
   margin: 0 auto;
   margin-top: 20px;
   max-width: 80%;
 }
 @media only screen and (max-width:830px) {
-    .section_about p {
+    .section_center p {
         max-width: 100%;
     }
 }
@@ -22,10 +26,10 @@
 }
 
 .circle__1 {
-    width: 60px;
-    height: 60px;
-    margin-left: -27px;
-    margin-top: -43px;
+  width: 53px;
+  height: 53px;
+  margin-left: -26px;
+  margin-top: -45px;
 }
 
 .circle__2 {
@@ -45,7 +49,7 @@
 .cards {
     width: 33%;
     float: left;
-    min-height: 350px;
+    min-height: 300px;
     top: 0;
     padding: 10px 1.6%;
     position: relative;
@@ -84,8 +88,7 @@
 }
 @media only screen and (max-width:830px) {
     .flourish-right1 {
-      margin-right: -44px;
-      margin-top: -540px;
+      margin-top: -308px;
       width: 30vw;
     }
 }
@@ -109,6 +112,9 @@
 
 .flourish-bot {
     max-width: 130px;
+    position: relative;
+    top: -50px;
+    margin-bottom: -30px;
 }
 
 .profiles {
@@ -134,7 +140,8 @@
 }
 @media only screen and (max-width:600px) {
     .profile-img {
-        padding-right: 15px;
+        padding-right: 6px;
+        margin-top: 15px;
     }
 }
 
@@ -153,7 +160,8 @@
 }
 
 .profile-content p:first-child {
-    font-size: .6rem;
+    font-size: .7rem;
+    margin: 15px 0px 15px 0px;
     line-height: 15px;
     text-transform: uppercase;
     font-weight: bold;
@@ -165,13 +173,23 @@
 .profile-content p:last-child {
   color: #F91D61;
   text-transform: uppercase;
+  white-space: nowrap;
   font-weight: bold;
   letter-spacing: 5px;
   border: 1px solid #F91D61;
   width: auto;
   clear:both;
   float:left;
-  padding: 3px 20px;
+  padding: 2px 15px;
   border-radius: 90px;
-  font-size: .8rem;
+  font-size: .7rem;
+  margin-top: 20px;
+}
+
+.video-tease {
+    width: 118%;
+    height: auto;
+    position: relative;
+    margin-left: -9%;
+    margin-bottom: -5em;
 }
