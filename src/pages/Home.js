@@ -3,6 +3,8 @@ import Zach from '../assets/profile-zach.png'
 import Brittany from '../assets/profile-brittany.png'
 import Caleb from '../assets/profile-caleb.png'
 import Mei from '../assets/profile-mei.png'
+import Brie from '../assets/profile-brie.png'
+import Meiju from '../assets/profile-meiju.png'
 import Profile from '../components/Profile';
 import Card from '../components/Card'
 import Develop from '../assets/icon-develop.svg'
@@ -12,6 +14,7 @@ import FRightOne from '../assets/flourish-right-1.png'
 import FRightTwo from '../assets/flourish-right-2.png'
 import FLeftOne from '../assets/flourish-left-1.png'
 import FlourishBot from '../assets/flourish-bottom-1.svg'
+import Tease from '../assets/tease.mp4'
 
 import './Home.css'
 
@@ -26,7 +29,7 @@ class Home extends Component {
 	render() {
 		return(
 			<main>
-				<section className='section_about'>
+				<section className='section_center'>
 					<span className='circle circle__2' />
 					<span className='circle circle__3' />
 					<h1>Who We Are</h1>
@@ -88,6 +91,22 @@ class Home extends Component {
 						role={'Design'}
 						quote={'"What got us here today, won\'t get us there tomorrow." -Marshall Goldsmith'}
 					/>
+					<Profile
+						source={Brie}
+						altText={'Picture of Dog'}
+						teamMember={'Brie Spase'}
+						title={'Chief Security Officer'}
+						role={'K9 Security'}
+						quote={'"Handle every situation like a dog. If you can\'t eat it or play with it, just pee on it and walk away." -Doggy Ghandi'}
+					/>
+					<Profile
+						source={Meiju}
+						altText={'Picture of Dog'}
+						teamMember={'Meiju'}
+						title={'Chief Barking Officer'}
+						role={'People Manager'}
+						quote={'"I am not spoiled I just happen to be great at training people." -Every Dog Ever'}
+					/>
 				</section>
 				<img className='flourish-right2' src={FRightTwo} />
 				<img className='flourish-bot' src={FlourishBot} />
@@ -133,7 +152,19 @@ class Home extends Component {
 							{/* <input type="hidden" name="_next" value="./"/> */}
 						{/* <Button type='submit'>Send</Button>  */}
 						{/* </FormControl> */}
-					{/* </form> */} 
+					{/* </form> */}
+					<div className='section_center'>
+						<h1>The Latest</h1>
+						<p>We can't share much yet, but we're working on something
+							<span className='special'> new.</span> In the meantime, follow us on
+							<a href="https://twitter.com/mythtek"> twitter</a>,
+							<a href="https://www.facebook.com/mythtek"> facebook</a>, and
+							<a href="https://www.instagram.com/mythtek/"> instagram</a> to stay up to date,
+							or email Mei directly ( <span class="special">mei@mythtek.co</span>) for the latest press, insights, news, or if you just want to come hang and build products with us.</p>
+						<video className='video-tease' autoPlay loop muted>
+							<source src={Tease} type="video/mp4" />
+						</video>
+					</div>
 			</main>
 		)
 	}

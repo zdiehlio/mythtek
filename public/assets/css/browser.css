@@ -22,12 +22,19 @@ body {
     display: none;
 }
 
-body.in-transition {
-    transition: transform 800ms ease;
-    -webkit-transition: transform 800ms ease;
-    -moz-transition: transform 800ms ease;
-    -o-transition: transform 800ms ease;
-}
+section {
+   overflow: auto;
+   padding-bottom: 15vh;
+ }
+
+main {
+     width: 85%;
+     max-width: 1250px;
+     margin: auto;
+     margin-top: 10em;
+     text-align: center;
+     padding-bottom: 5em;
+ }
 
 img {
     width: 100%;
@@ -36,7 +43,7 @@ img {
 
 ::selection {
     color: white;
-    background: #1590F3;
+    background: #F91D61;
 }
 
 .wow {
