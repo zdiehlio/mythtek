@@ -156,11 +156,11 @@ class Home extends Component {
 					<div className='section_center'>
 						<h1>The Latest</h1>
 						<p>We can't share much yet, but we're working on something
-							<span className='special'> new.</span> In the meantime, follow us on
+							<span className='special'> new.</span> In the meantime, follow us on&nbsp;
 							<a href="https://twitter.com/mythtek"> twitter</a>,
 							<a href="https://www.facebook.com/mythtek"> facebook</a>, and
 							<a href="https://www.instagram.com/mythtek/"> instagram</a> to stay up to date,
-							or email Mei directly ( <span class="special">mei@mythtek.co</span>) for the latest press, insights, news, or if you just want to come hang and build products with us.</p>
+							or email Mei directly ( <span class="special">mei@mythtek.co</span>) for more info.</p>
 						<video className='video-tease' autoPlay loop muted>
 							<source src={Tease} type="video/mp4" />
 						</video>
