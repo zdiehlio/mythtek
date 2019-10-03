@@ -58,7 +58,7 @@ class Home extends Component {
 					/>
 				</section>
 				<img className='flourish-left' src={FLeftOne} />
-				<section>
+				{/* <section>
 					<Profile
 						source={Zach}
 						altText={'Picture of Developer'}
@@ -107,7 +107,7 @@ class Home extends Component {
 						role={'People Manager'}
 						quote={'"I am not spoiled I just happen to be great at training people." -Every Dog Ever'}
 					/>
-				</section>
+				</section> */}
 				<img className='flourish-right2' src={FRightTwo} />
 				<img className='flourish-bot' src={FlourishBot} />
 					{/* <form action= "https://formspree.io/zachary.diehl@gmail.com" method="POST">
